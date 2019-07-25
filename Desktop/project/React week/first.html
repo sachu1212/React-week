@@ -1,0 +1,18 @@
+<html>
+        <script>
+                function Add(){
+                    var T1 = window.document.forms[0].elements[0];
+                    var T2 = window.document.forms[0].elements[1];
+                    var T3 = window.document.forms[0].elements[2];
+            
+                    T3.value = parseInt(T1.value)+parseInt(T2.value);
+                }
+        </script>
+
+<form>
+    <input>
+    <input>
+    <input>
+    <input type="button" onclick="Add()" value="submit">
+</form>
+</html>
