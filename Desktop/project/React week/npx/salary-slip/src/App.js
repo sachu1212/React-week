@@ -144,28 +144,43 @@ import './App.css';
 //     );
 // }
 
-
 //6666
-class Eventhandling extends React.Component{
-      constructor(){
-        super();
-        this.state={count:0,message:"Shafeeq"}
-        this.clicked=this.clicked.bind(this);
-      }
-      clicked(){
-        this.setState({
-          count:parseInt(this.state.count)+1
-        });
-      }
-      render(){
-        return(
-          <div>
-            <h1>{this.state.message}</h1>
-            <h1>{this.state.count}</h1>
-            <button onClick={this.clicked}> Event Handling </button>
-          </div>
-        );
-      }
-    }
-    export default Eventhandling;
+// class App extends React.Component {
+//   state = {
+//     area: 0,
+//     length: "",
+//     width: ""
+//   };
+//   handlelengthChange = evt => {
+//     const length = Number(evt.target.value);
+//     this.setState(prevState => ({
+//       length,
+//       area: length * prevState.width
+//     }));
+//   };
+//   handlewidthChange = evt => {
+//     const width = Number(evt.target.value);
+//     this.setState(prevState => ({
+//       width,
+//       area: prevState.length * width,
+//     }));
+//   };
 
+class TimesTable extends React.Component{
+  render(){
+
+      let Components = [];
+      for(let i = 0; i<= this.props.range;i++){
+          Components.push(React.createElement("h2",null,this.props.timestable + "x" + i + "=" + (this.props.timestable*i)));
+
+      }
+      let Result = React.createElement("h1",null,Components);
+      return Result;
+  }
+}
+
+const div1 = document.getElementById("QA1");
+const timestable = React.createElement(TimesTable,{timestable:8, range:50});
+let tt = React.createElement("div",{"style":{"text-align": "center", "color":"red"}},timestable)
+
+ReactDOM.render(tt,div1)

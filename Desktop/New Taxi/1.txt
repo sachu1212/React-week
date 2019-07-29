@@ -1,0 +1,15 @@
+1. Request Mapping annotation maps HTTP requests to handler methods of MVC and REST controllers.
+2. @Entity annotation specifies that the class is an entity and is mapped to a database table
+3. @Repository is a Spring annotation that indicates that the decorated class is a repository. 
+   A repository is a mechanism for encapsulating storage, retrieval, and search behavior which emulates a collection of objects.
+
+4. A RESTful API is an application program interface (API) that uses HTTP requests to 
+   GET, PUT, POST and DELETE data.... 
+   REST technology is generally preferred to the more robust Simple Object Access Protocol (SOAP) technology because 
+   REST leverages less bandwidth, making it more suitable for internet usage.
+
+5. H2 is an open-source lightweight Java database. It can be embedded in Java applications or run in the client-server mode. 
+   Mainly, H2 database can be configured to run as inmemory database, which means that data will not persist on the disk.
+6. MySql is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). 
+   SQL is the most popular language for adding, accessing and managing content in a database. 
+   It is most noted for its quick processing, proven reliability, ease and flexibility of use.
